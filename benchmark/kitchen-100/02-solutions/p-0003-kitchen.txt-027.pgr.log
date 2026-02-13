@@ -1,0 +1,124 @@
+Random seed: 42
+Time limit: 1800 seconds
+Reading input from /Users/katherinei/Downloads/goal_rec_htn/benchmarks/kitchen-100/02-solutions/p-0003-kitchen.txt-027.pgr.
+- State has 29 bits divided into 1 mutex groups.
+- Domain contains 410 actions.
+- Domain contains 4667 tasks.
+- Domain contains 15323 methods.
+- The initial state contains 1 set bits.
+- The initial task is "__top[]".
+- State-based goal contains 1 bits.
+- Instance is totally-ordered: no
+- Instance has unique paths: no
+- Instance is parallel sequences: no
+Calculate SCCs...
+- Number of SCCs: 4667
+- The problem is acyclic
+Selected Planning Algorithm: progression searchParsing heuristics ...
+Number of specified heuristics: 0
+No heuristics given, setting default ... 
+Generate 3
+
+RC Factory: CMA 1
+- the option "store cuts" of the RC heuristic can only be used with the inner heuristic LM-Cut. It will be disabled.
+- Calculating minimal implied distances and estimated costs (18 ms)
+Heuristic #0 = hhRC2(ff;distance;correct count)
+Search config:
+ - type: path cost
+ - weight: 1
+ - suboptimal: false
+Visited List configured
+- mode: partial order
+- hashs to use: state task task-sequence
+- memory information: topological ordering order-pairs layer
+- Visited list allows deletion of search nodes: false
+Search Configuration
+- Using JAIR 2020 progression algorithm
+- Search is stopped after first solution is found.
+- A* Search
+- Distance G is "modification depth"
+Search Results
+- Search time 0.017 seconds
+- Visited list time 0.000823 seconds
+- Visited list inserts 34
+- Visited list pruned 0
+- Visited list contains 34
+- Visited list hash collisions 0
+- Visited list used hash buckets 34
+- Generated 1179 search nodes
+  Calculated heuristic for 1147 nodes
+  One modifications 30
+  Effectless actions 2
+- including 30 one modification actions
+- including 0 one modification methods
+- and       2 progressions of effectless actions
+- Generated 67470 nodes per second
+- Final fringe contains 5 nodes
+- Status: Solved
+- Found solution of length 62
+- Total costs of actions: 29
+==>
+1111 add[oil,pan1]
+1115 roast[oil,pan1]
+1116 chop[onion]
+1119 add[onion,pan1]
+1122 add[water,pot1]
+1126 cook[water,pot1]
+1129 add[spaghetti,pot1]
+1132 add[salt,pot1]
+1135 add[oil,pot1]
+1138 cook[spaghetti,pot1]
+1141 chop[garlic]
+1145 add[garlic,pan1]
+1148 roast[garlic,pan1]
+1149 wash[rocket]
+1152 add[rocket,bowl1]
+1153 add[tomatoes,bowl1]
+1154 wash[lettuce]
+1155 add[vinegar,bowl3]
+1156 add[mustard,bowl3]
+1157 add[oliveOil,bowl3]
+1160 mix[contentBowl3]
+1161 drain[spaghetti,pot1]
+1162 roast[onion,pan1]
+1165 add[mincedMeat,pan1]
+1168 roast[mincedMeat,pan1]
+1171 add[tomatoes,pan1]
+1174 cook[tomatoes,pan1]
+1175 add[lettuce,bowl1]
+1176 add[contentBowl3,bowl1]
+root 0
+1173 <abs>cook[tomatoes,pan1] -> _!<method2pref26>cook[tomatoes,pan1] 1174
+1170 <abs>add[tomatoes,pan1] -> _!<method2pref25>add[tomatoes,pan1] 1171
+1167 <abs>roast[mincedMeat,pan1] -> _!<method2pref24>roast[mincedMeat,pan1] 1168
+1164 <abs>add[mincedMeat,pan1] -> _!<method2pref23>add[mincedMeat,pan1] 1165
+1159 <abs>mix[contentBowl3] -> _!<method2pref20>mix[contentBowl3] 1160
+1151 <abs>add[rocket,bowl1] -> _!<method2pref14>add[rocket,bowl1] 1152
+1147 <abs>roast[garlic,pan1] -> _!<method2pref12>roast[garlic,pan1] 1148
+1144 <abs>add[garlic,pan1] -> _!<method2pref11>add[garlic,pan1] 1145
+1140 <abs>drain[spaghetti,pot1] -> _!<method2pref21>drain[spaghetti,pot1] 1161
+1137 <abs>cook[spaghetti,pot1] -> _!<method2pref9>cook[spaghetti,pot1] 1138
+1134 <abs>add[oil,pot1] -> _!<method2pref8>add[oil,pot1] 1135
+1131 <abs>add[salt,pot1] -> _!<method2pref7>add[salt,pot1] 1132
+1128 <abs>add[spaghetti,pot1] -> _!<method2pref6>add[spaghetti,pot1] 1129
+1125 <abs>cook[water,pot1] -> _!<method2pref5>cook[water,pot1] 1126
+1121 <abs>roast[onion,pan1] -> _!<method2pref22>roast[onion,pan1] 1162
+1118 <abs>add[onion,pan1] -> _!<method2pref3>add[onion,pan1] 1119
+1114 <abs>roast[oil,pan1] -> _!<method2pref1>roast[oil,pan1] 1115
+1110 <abs>add[oliveOil,bowl3] -> _!<method2pref19>add[oliveOil,bowl3] 1157
+1108 <abs>wash[rocket] -> _!<method2pref13>wash[rocket] 1149
+1106 <abs>add[tomatoes,bowl1] -> _!<method2pref15>add[tomatoes,bowl1] 1153
+1104 <abs>add[oil,pan1] -> _!<method2pref0>add[oil,pan1] 1111
+1102 <abs>add[vinegar,bowl3] -> _!<method2pref17>add[vinegar,bowl3] 1155
+1100 <abs>add[mustard,bowl3] -> _!<method2pref18>add[mustard,bowl3] 1156
+1098 <abs>chop[onion] -> _!<method2pref2>chop[onion] 1116
+1096 <abs>wash[lettuce] -> _!<method2pref16>wash[lettuce] 1154
+1094 <abs>chop[garlic] -> _!<method2pref10>chop[garlic] 1141
+1092 makeLettuce[bowl1] -> <m-makeLettuce;m-makeLettuce_splitted_3[oliveOil,vinegar,mustard,bowl1,contentBowl3];_splitting_method_m-makeLettuce_splitted_3;5;0,1,2,3,4,-1,-2,-3,6,7> 1096 1108 1175 1151 1106 1100 1102 1110 1159 1176
+1090 hypothesis-61_splitted_2211[] -> <_splitting_method_hypothesis-61_splitted_2211;makeBolognese[pan1];m-makeBolognese;0;-1,-2,-3,-4,-5,-6,-7,-8,-9,-10,-11,-12> 1098 1094 1104 1114 1118 1144 1121 1147 1164 1167 1170 1173
+1088 hypothesis-61_splitted_1148[] -> _splitting_method_hypothesis-61_splitted_1148 1092
+1085 <abs>add[water,pot1] -> _!<method2pref4>add[water,pot1] 1122
+1082 hypothesis-61_splitted_66[spaghetti] -> <_splitting_method_hypothesis-61_splitted_66;makeNoodles[spaghetti,pot1];m-makeNoodles;0;-1,-2,-3,-4,-5,-6,-7> 1085 1125 1128 1131 1134 1137 1140
+601 mtlt[] -> hypothesis-61 1088 1090 1082
+0 __top[] -> __top_method 601
+<==

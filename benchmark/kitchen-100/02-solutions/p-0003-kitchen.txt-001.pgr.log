@@ -1,0 +1,85 @@
+Random seed: 42
+Time limit: 1800 seconds
+Reading input from /Users/katherinei/Downloads/goal_rec_htn/benchmarks/kitchen-100/02-solutions/p-0003-kitchen.txt-001.pgr.
+- State has 3 bits divided into 1 mutex groups.
+- Domain contains 384 actions.
+- Domain contains 4615 tasks.
+- Domain contains 15271 methods.
+- The initial state contains 1 set bits.
+- The initial task is "__top[]".
+- State-based goal contains 1 bits.
+- Instance is totally-ordered: no
+- Instance has unique paths: no
+- Instance is parallel sequences: no
+Calculate SCCs...
+- Number of SCCs: 4615
+- The problem is acyclic
+Selected Planning Algorithm: progression searchParsing heuristics ...
+Number of specified heuristics: 0
+No heuristics given, setting default ... 
+Generate 3
+
+RC Factory: CMA 1
+- the option "store cuts" of the RC heuristic can only be used with the inner heuristic LM-Cut. It will be disabled.
+- Calculating minimal implied distances and estimated costs (30 ms)
+Heuristic #0 = hhRC2(ff;distance;correct count)
+Search config:
+ - type: path cost
+ - weight: 1
+ - suboptimal: false
+Visited List configured
+- mode: partial order
+- hashs to use: state task task-sequence
+- memory information: topological ordering order-pairs layer
+- Visited list allows deletion of search nodes: false
+Search Configuration
+- Using JAIR 2020 progression algorithm
+- Search is stopped after first solution is found.
+- A* Search
+- Distance G is "modification depth"
+Search Results
+- Search time 0.131 seconds
+- Visited list time 0.000592 seconds
+- Visited list inserts 42
+- Visited list pruned 0
+- Visited list contains 42
+- Visited list hash collisions 0
+- Visited list used hash buckets 42
+- Generated 1284 search nodes
+  Calculated heuristic for 1188 nodes
+  One modifications 6
+  Effectless actions 90
+- including 6 one modification actions
+- including 0 one modification methods
+- and       90 progressions of effectless actions
+- Generated 9068 nodes per second
+- Final fringe contains 825 nodes
+- Status: Solved
+- Found solution of length 23
+- Total costs of actions: 16
+==>
+1266 add[oil,pan1]
+1267 add[water,pot4]
+1268 peel[potatoes]
+1269 flatten[pork]
+1270 cook[water,pot4]
+1271 add[potatoes,pot3]
+1272 sprinkle[salt,pork]
+1273 sprinkle[pepper,pork]
+1274 sprinkle[eggs,pork]
+1275 sprinkle[flour,pork]
+1276 sprinkle[breadcrumbs,pork]
+1277 add[pea,pot4]
+1278 add[water,pot3]
+1279 roast[pork,pan1]
+1280 cook[pea,pot4]
+1281 cook[potatoes,pot3]
+root 0
+1265 <abs>add[oil,pan1] -> _!<method2pref0>add[oil,pan1] 1266
+1264 makeSchnitzel[pan1] -> m-makeSchnitzel1 1269 1272 1273 1274 1275 1276 1265 1279
+1261 hypothesis-18_splitted_2172[] -> _splitting_method_hypothesis-18_splitted_2172 1264
+1255 hypothesis-18_splitted_23[] -> <_splitting_method_hypothesis-18_splitted_23;makeBoiledPotatoes[pot3];m-makeBoiledPotatoes;0;-1,-2,-3,-4> 1268 1271 1278 1281
+1193 hypothesis-18_splitted_1105[] -> <_splitting_method_hypothesis-18_splitted_1105;makePea[pot4];m-makePea;0;-1,-2,-3,-4> 1267 1270 1277 1280
+170 mtlt[] -> hypothesis-18 1255 1193 1261
+0 __top[] -> __top_method 170
+<==

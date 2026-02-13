@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/katherinei/Downloads/goal_rec_htn/build/cmake_install.cmake",
+		"/Users/katherinei/Downloads/goal_rec_htn/build/verifier/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
