@@ -1,11 +1,11 @@
 To run experiments for the kitchen domain, use the following commands:
 
 Make sure to compile the following software components:
-* the PANDA parser
-* the PANDA grounder
-* the PANDA planner
-* the PANDA PIpgrRepairVerify
-* the code in this repository
+* PANDA parser
+* PANDA grounder
+* PANDA planner
+* PANDA PIpgrRepairVerify
+* Code in this repository
 
 
 ```bash
